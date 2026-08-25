@@ -1,11 +1,14 @@
 {
   "name": "loader-exec-sequence",
   "version": "1.0.0",
-  "description": "",
+  "description": "Webpack custom loader execution sequence demo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "demo:raw": "node run-raw-loader.js",
+    "demo:sprite": "node run-sprite-loader.js",
+    "preview:sprite": "node run-sprite-loader.js && start dist/preview.html"
   },
   "repository": {
     "type": "git",
@@ -18,10 +21,10 @@
   },
   "homepage": "https://github.com/Sgr2014/loader-exec-sequence#readme",
   "devDependencies": {
+    "loader-runner": "^4.3.2",
     "loader-utils": "^2.0.0",
     "spritesmith": "^3.4.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
-  },
-  "dependencies": {}
+  }
 }
